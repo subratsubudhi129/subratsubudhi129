@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google potos gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="webwinz.css">
+</head>
+<body id="whole">
+    <header>
+    <div class="navbar">
+       <div class="heading">
+        <h1>PHOTO GALLERY</h1>
+     </div>
+     <div class="div">
+        <h2>capture your memory here
+            for life time .make your life more more
+            beautifull with us.
+        </h2>
+     </div>
+     <div class="pannel-nav">
+        <a>About us</a>
+        <a>Them</a>
+        <a>Add images</a>
+        <a> Add vedios</a>
+        <a>more about us</a>
+     </div>
+     <div class="navsearch">
+            <input placeholder="Enter your gmail" class="search-input">
+                <button id="buton">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+        </div>
+    </div>
+    <div class="clockhead">
+        <h1>DIGITAL CLOCK</h1>
+    </div>
+    <div class="hero">
+        <div class="container">
+            <div class="clock">
+                <span id="hrs">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="content">
+    <div class="box_1 box">
+        <div class="img1"></div>
+    </div>
+    <div class="box_2 box">
+        <div class="img2"></div>
+    </div>
+    <div class="box_3 box">
+        <div class="img3"></div>
+    </div>
+    <div class="box_4 box">
+        <div class="img4"></div>
+    </div>
+    <div class="box_5 box">
+        <div class="img5"></div>
+    </div>
+    <div class="box_6 box">
+        <div class="img6"></div>
+    </div>
+    <div class="box_7 box">
+        <div class="img7"></div>
+    </div>
+    <div class="box_8 box">
+        <div class="img8"></div>
+    </div>
+    <div class="box_9 box">
+        <div class="img9"></div>
+    </div>
+</div>
+<footer>
+    <div class="foot-pannel">
+        <div class="coloumn1">
+            <h2>Marketplace</h2>
+            <p>All NFTs</p>
+            <p>Art</p>
+            <p>Music</p>
+            <p>Domain name</p>
+            <p>Collection</p>
+        </div>
+        <div class="Column_2">
+            <h2>Resource</h2>
+            <p>Help center</p>
+            <p>Partners</p>
+            <p>Suggestion</p>
+            <p>Docs</p>
+            <p>Newsletter</p>
+        </div>
+        <div class="column_3">
+        <h2>community</h2>
+        <p>Community</p>
+        <p>Documentation</p>
+        <p>Brand assets</p>
+        <p>Blog</p>
+        <p>Forum</p>
+        <p>Melling list</p>
+     </div>
+     <div class="coloumn_4">
+        <h2>About us</h2>
+        <p>sign up to our wesite for a exciting experience.</p>
+        <input placeholder="enter your gmail here" class="foot-search">
+        <button class="foot-button">Okey</button>
+        <h2>contact us on</h2>
+        <div class="social-media">
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+     </div>
+    </div>
+</footer>
+<script>
+    let hrs = document.getElementById("hrs");
+    let min = document.getElementById("min");
+    let sec = document.getElementById("sec");
+
+    setInterval(()=>{
+        let currentTime =new Date();
+
+hrs.innerHTML = (currentTime.getHours()<10?"0":"")+currentTime.getHours();
+min.innerHTML =  (currentTime.getMinutes()<10?"0":"")+currentTime.getMinutes();
+sec.innerHTML =  (currentTime.getSeconds()<10?"0":"")+currentTime.getSeconds();
+    },1000)
+
+   
+</script>
+</body>
+       </html>
